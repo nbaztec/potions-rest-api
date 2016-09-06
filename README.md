@@ -3,7 +3,8 @@
 Test potions is a simple REST test service that exposes the following end points:
  
 
-#### GET, POST /
+## GET, POST /
+
 
 Check API health.
 
@@ -11,7 +12,7 @@ Check API health.
 **version** string
 
 
-#### GET /list
+## GET /list
 
 Retrieve list of potions.
 
@@ -20,7 +21,7 @@ Retrieve list of potions.
 * **name** string
 
 
-#### GET /item?id=XX
+## GET /item?id=XX
 
 Retrieve detailed information about a single potion.
 
@@ -30,13 +31,15 @@ Retrieve detailed information about a single potion.
 * **toxicity** float
 
 
-#### POST /mix
+## POST /mix
 
 Mix 2 or more potions and return the final toxicity.
 
 Request JSON body:
 
-**ids** list of potion IDs. Eg: { "ids": [2, 5, 6] }
+**ids** list of potion IDs. Eg: `{ "ids": [2, 5, 6] }` 
+
+&nbsp;
 
 Response JSON body:
 
