@@ -37,6 +37,8 @@ func checkAuth(next http.Handler) http.Handler {
 			return
 		}
 
+		w.Header().Add("Content-Type", "application/json")
+
 		next.ServeHTTP(w, r)
 	})
 }

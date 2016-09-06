@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/nishb/test-potions/routes"
+	"github.com/nishb/potions-rest-api/routes"
 	"net/http"
 )
 

@@ -1,7 +1,13 @@
 # About
 
 Test potions is a simple REST test service that exposes the following end points:
+
  
+## Authorization
+
+The API expects an `Authorization` header containing the base64 encoded key. The key is set
+at server level and defaults to **mixOfRandomPotions**
+
 
 ## GET, POST /
 
