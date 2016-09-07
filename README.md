@@ -59,7 +59,7 @@ Response JSON body:
 
 ```
 $ go build
-$ ./test-potions
+$ ./potions-rest-api
 ```
 
 # Test
