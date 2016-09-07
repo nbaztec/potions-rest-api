@@ -1,10 +1,10 @@
 package routes
 
 import (
-	"testing"
-	"net/http/httptest"
-	"net/http"
 	"bytes"
+	"net/http"
+	"net/http/httptest"
+	"testing"
 )
 
 func TestGetRoute(t *testing.T) {

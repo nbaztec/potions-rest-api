@@ -16,5 +16,12 @@ func NewRouter() http.Handler {
 	r.Methods("POST").Path("/mix").HandlerFunc(MixPotionRoute)
 	r.PathPrefix("/").HandlerFunc(Route404)
 
-	return checkAuth(handlers.CORS()(r))
+	return handlers.CORS(handlers.AllowedHeaders([]string{
+		"Accept",
+		"Content-Type",
+		"Content-Length",
+		"Accept-Encoding",
+		"X-CSRF-Token",
+		"Authorization",
+	}))(checkAuth(r))
 }
