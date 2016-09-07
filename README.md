@@ -68,3 +68,20 @@ $ ./test-potions
 $ go test ./...
 $ go test ./... -cover
 ```
+
+
+# CURL Examples
+
+```
+$ curl -H 'Authorization:XXXXX' /
+{"status":"Ok","version":"1.0"}
+  
+$ curl -H 'Authorization:XXXXX' /list
+{"items":[{"id":1,"string":"Acidic Tonic"},{"id":2,"string":"Brew of Exalted Cats"},{"id":....
+  
+$ curl -H 'Authorization:XXXXX' /item?id=1
+{"item":{"id":1,"string":"Acidic Tonic","toxicity":10.5}}
+  
+$ curl -X POST -H 'Authorization:XXXX' /mix --data '{"ids": [1,2,3]}'
+{"toxicity":55.9}
+```
